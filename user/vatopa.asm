@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
   36:	85aa                	mv	a1,a0
     }
 
-    printf("0x%x", va2pa(va, pid));
+    printf("0x%x\n", va2pa(va, pid));
   38:	854e                	mv	a0,s3
   3a:	00000097          	auipc	ra,0x0
   3e:	38c080e7          	jalr	908(ra) # 3c6 <va2pa>

@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
         pid = getpid();
     }
 
-    printf("0x%x", va2pa(va, pid));
+    printf("0x%x\n", va2pa(va, pid));
     return 0;
 }
