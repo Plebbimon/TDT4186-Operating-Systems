@@ -119,6 +119,8 @@ void procdump(void);
 struct user_proc *ps(uint8 start, uint8 count);
 void schedls(void);
 void schedset(int id);
+struct proc *find_proc(int pid);
+uint64 va2pa(uint64 va, int pid);
 
 // swtch.S
 void swtch(struct context *, struct context *);
